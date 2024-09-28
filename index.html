@@ -10,7 +10,7 @@
     <script>
         // Notify the backend when the page loads
         window.onload = function() {
-            fetch('http://localhost:3000/notify')
+            fetch('https://app-2odi.onrender.com/notify')
                 .then(response => console.log('Notification sent'))
                 .catch(error => console.error('Error:', error));
         };
