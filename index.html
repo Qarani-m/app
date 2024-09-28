@@ -6,42 +6,8 @@
     <title>Dearest Angel</title>
     <link rel="stylesheet" href="styles.css">
 </head>
- 
-<style>
-    body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
 
-.container {
-    max-width: 600px;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
 
-.letter {
-    line-height: 1.6;
-}
-
-h1 {
-    font-size: 24px;
-    color: #5a5a5a;
-}
-
-p {
-    margin: 15px 0;
-}
-
-</style>
 
 
     <body>
@@ -57,17 +23,7 @@ p {
                 <p>Best regards,<br>M.K</p>
             </div>
         </div>
-   
-
-
-
-
-
-
-
-
-
-    <script>
+       <script>
         // Notify the backend when the page loads
         window.onload = function() {
             fetch('https://app-2odi.onrender.com/notify')
@@ -75,5 +31,40 @@ p {
                 .catch(error => console.error('Error:', error));
         };
     </script>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    .container {
+        max-width: 600px;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .letter {
+        line-height: 1.6;
+    }
+    
+    h1 {
+        font-size: 24px;
+        color: #5a5a5a;
+    }
+    
+    p {
+        margin: 15px 0;
+    }
+    
+    </style>
 </body>
 </html>
