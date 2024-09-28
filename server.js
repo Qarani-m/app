@@ -2,10 +2,12 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
+const cors = require('cors'); // Import the cors module
 
 const app = express();
 const PORT = 3098;
 
+app.use(cors()); // Enable CORS for all routes
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -20,8 +22,6 @@ const transporter = nodemailer.createTransport({
 
 // Endpoint to log visits
 app.get('/notify', (req, res) => {
- 
-
     const mailOptions = {
         from: 'emqarani@gmail.com',
         to: 'emqarani1@gmail.com',
@@ -41,5 +41,3 @@ app.get('/notify', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
 });
-
-
